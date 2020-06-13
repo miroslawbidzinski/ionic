@@ -73,57 +73,76 @@
 
 
 
-<!-- ALIGMENT -->
+<!-- SITE -->
+<!-- header -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-col size="8">
 
-  <ion-app>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>WSB 13.06.2020</ion-title>
-      </ion-toolbar>
-    </ion-header>
+        <ion-chip>
+          <ion-avatar>
+            <img src="assets/person.jpg">
+          </ion-avatar>
+          <ion-label>User Name</ion-label>
+        </ion-chip>
+      </ion-col>
+      <ion-col text-align: end>
+        <ion-icon name="search-sharp"></ion-icon>
+      </ion-col>
+      <ion-col text-align: end>
+        <ion-icon name="apps"></ion-icon>
+      </ion-col>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<!-- content -->
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img src="assets/city.jpg">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+   
+   
+  </ion-card>
+</ion-content>
+
+<!-- footer -->
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Schedule</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
   
-    <ion-content class="ion-padding">
-      <ion-grid>
-        <ion-row style="background-color: lime;">
-          <ion-col>
-            <div class="ion-text-start ion-hide-lg-down">
-              <h3>Ala ma kota</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-end">
-              <h3>text-end</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-center">
-              <h3>text-center</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div class="ion-text-justify">
-              <h3>text-justify</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-wrap ion-hide">
-              <h3>text-wrap</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-nowrap ion-hide">
-              <h3>text-nowrap</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-content>
-  </ion-app>
+      <ion-tab-button tab="speakers">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Speakers</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Map</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="about">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>About</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  <div>TEST</div>
+
+</ion-footer>
